@@ -62,7 +62,6 @@ public class Customer implements Runnable {
                     this.loanNeeded -= loanAmountRequested;
                 } else {
                     bankSet.remove(randomChosenBank);
-                    System.err.println(this.customerName + " removed  bank " + randomChosenBank.getBankName() + " " + this.bankSet);
                     bankIndex = -1;
                 }
             } catch (InterruptedException e) {
